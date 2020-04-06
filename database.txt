@@ -1,0 +1,11 @@
+//Here is the code for the creation of the database
+//we have to create the databse in phpmyadmin with the name as "sign up"
+//given below is the code for the creation of database
+
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `username` varchar(100) NOT NULL UNIQUE,
+  `email` varchar(100) NOT NULL UNIQUE,
+  `password` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
